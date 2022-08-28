@@ -1,0 +1,20 @@
+PODS:
+  - MTiOSDevKit (0.1.0):
+    - MTiOSDevKit/Base (= 0.1.0)
+    - MTiOSDevKit/WCS (= 0.1.0)
+  - MTiOSDevKit/Base (0.1.0)
+  - MTiOSDevKit/WCS (0.1.0)
+
+DEPENDENCIES:
+  - MTiOSDevKit (from `../`)
+
+EXTERNAL SOURCES:
+  MTiOSDevKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MTiOSDevKit: 88ab71e28454bdcdfc3dd32705a196be293c862a
+
+PODFILE CHECKSUM: 7dd547c3773e82f260e99e6eb180ab3244dd3b07
+
+COCOAPODS: 1.11.3

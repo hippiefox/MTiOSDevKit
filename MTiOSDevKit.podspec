@@ -28,10 +28,19 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/HippieFox/MTiOSDevKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version       = '5.0'
 
   s.source_files = 'MTiOSDevKit/Classes/**/*'
   
+  s.subspec 'Base' do |bb|
+      bb.source_files = "MTiOSDevKit/Classes/Base/*"
+  end
+  
+  s.subspec 'WCS' do |wcs|
+      wcs.source_files = "MTiOSDevKit/Classes/WCS/*"
+  end
+
   # s.resource_bundles = {
   #   'MTiOSDevKit' => ['MTiOSDevKit/Assets/*.png']
   # }

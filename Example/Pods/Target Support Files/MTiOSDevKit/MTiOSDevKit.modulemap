@@ -1,0 +1,6 @@
+framework module MTiOSDevKit {
+  umbrella header "MTiOSDevKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
