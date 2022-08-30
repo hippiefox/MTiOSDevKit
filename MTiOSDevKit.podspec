@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTiOSDevKit'
-  s.version          = '0.1.5'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of MTiOSDevKit.'
 
 # This description is used to generate tags and improve search results.
@@ -33,26 +33,6 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'MTiOSDevKit/Classes/**/*'
   
-  s.subspec 'Base' do |bb|
-      bb.source_files = "MTiOSDevKit/Classes/Base/*"
-  end
-  
-  s.subspec 'WCS' do |wcs|
-      wcs.source_files = "MTiOSDevKit/Classes/WCS/*"
-  end
-  
-  s.subspec 'ImagePreview' do |pp|
-      pp.source_files = "MTiOSDevKit/Classes/ImagePreview/*"
-      pp.dependency 'SnapKit'
-      pp.dependency 'Kingfisher'
-  end
-  
-  s.subspec 'Player' do |pl|
-      pl.source_files = "MTiOSDevKit/Classes/Player/*"
-#      pl.dependency 'BaiduBCEPlayerFull', "~> 2.3.7"
-        pl.dependency 'SnapKit'
-      
-  end
 
   
 
