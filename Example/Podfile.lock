@@ -1,20 +1,43 @@
 PODS:
+  - Kingfisher (7.3.2)
   - MTiOSDevKit (0.1.0):
+    - Kingfisher
     - MTiOSDevKit/Base (= 0.1.0)
+    - MTiOSDevKit/ImagePreview (= 0.1.0)
+    - MTiOSDevKit/Player (= 0.1.0)
     - MTiOSDevKit/WCS (= 0.1.0)
-  - MTiOSDevKit/Base (0.1.0)
-  - MTiOSDevKit/WCS (0.1.0)
+    - SnapKit
+  - MTiOSDevKit/Base (0.1.0):
+    - Kingfisher
+    - SnapKit
+  - MTiOSDevKit/ImagePreview (0.1.0):
+    - Kingfisher
+    - SnapKit
+  - MTiOSDevKit/Player (0.1.0):
+    - Kingfisher
+    - SnapKit
+  - MTiOSDevKit/WCS (0.1.0):
+    - Kingfisher
+    - SnapKit
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - MTiOSDevKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - SnapKit
 
 EXTERNAL SOURCES:
   MTiOSDevKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MTiOSDevKit: 88ab71e28454bdcdfc3dd32705a196be293c862a
+  Kingfisher: 0086ad83719761ba9b2cdaf6ef4d5b4878cbae23
+  MTiOSDevKit: d34cc845d10368dcdfc63ea8306a23546b971627
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 7dd547c3773e82f260e99e6eb180ab3244dd3b07
+PODFILE CHECKSUM: 4de1df8975a6efd1fad158f531fee6c841028786
 
 COCOAPODS: 1.11.3

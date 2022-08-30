@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MTiOSDevKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of MTiOSDevKit.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'HippieFox' => 'foxhippie@gmail.com' }
-  s.source           = { :git => 'https://github.com/HippieFox/MTiOSDevKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/hippiefox/MTiOSDevKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
@@ -40,6 +40,21 @@ TODO: Add long description of the pod here.
   s.subspec 'WCS' do |wcs|
       wcs.source_files = "MTiOSDevKit/Classes/WCS/*"
   end
+  
+  s.subspec 'ImagePreview' do |pp|
+      pp.source_files = "MTiOSDevKit/Classes/ImagePreview/*"
+  end
+  
+  s.subspec 'Player' do |pl|
+      pl.source_files = "MTiOSDevKit/Classes/Player/*"
+#      pl.dependency 'BaiduBCEPlayerFull', "~> 2.3.7"
+      
+  end
+
+  
+
+  s.dependency 'Kingfisher'
+  s.dependency 'SnapKit'
 
   # s.resource_bundles = {
   #   'MTiOSDevKit' => ['MTiOSDevKit/Assets/*.png']

@@ -12,7 +12,7 @@
     "HippieFox": "foxhippie@gmail.com"
   },
   "source": {
-    "git": "https://github.com/HippieFox/MTiOSDevKit.git",
+    "git": "https://github.com/hippiefox/MTiOSDevKit.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -20,6 +20,14 @@
   },
   "swift_versions": "5.0",
   "source_files": "MTiOSDevKit/Classes/**/*",
+  "dependencies": {
+    "Kingfisher": [
+
+    ],
+    "SnapKit": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "Base",
@@ -28,6 +36,14 @@
     {
       "name": "WCS",
       "source_files": "MTiOSDevKit/Classes/WCS/*"
+    },
+    {
+      "name": "ImagePreview",
+      "source_files": "MTiOSDevKit/Classes/ImagePreview/*"
+    },
+    {
+      "name": "Player",
+      "source_files": "MTiOSDevKit/Classes/Player/*"
     }
   ],
   "swift_version": "5.0"

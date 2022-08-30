@@ -15,6 +15,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		80D71C4D75D633BD78055127 /* Pods_MTiOSDevKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A624E3AB988951858752FE /* Pods_MTiOSDevKit_Tests.framework */; };
+		CF41390F28BDFEF0004B3C9F /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF41390E28BDFEF0004B3C9F /* libc++.tbd */; };
+		CF41391128BDFEF9004B3C9F /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF41391028BDFEF9004B3C9F /* libbz2.tbd */; };
+		CF41391328BDFF00004B3C9F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CF41391228BDFF00004B3C9F /* libz.tbd */; };
 		CFE7C34728B8B9D2005085DD /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE7C34628B8B9D2005085DD /* Foo.m */; };
 		CFE7C34928B8BACD005085DD /* IMG_0019.JPG in Resources */ = {isa = PBXBuildFile; fileRef = CFE7C34828B8BACD005085DD /* IMG_0019.JPG */; };
 /* End PBXBuildFile section */
@@ -47,6 +50,9 @@
 		9080904B53E9A8E0F24A7D67 /* Pods_MTiOSDevKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTiOSDevKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EA728D2D149BD2243648C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A6CF56CF56304F1C270FF8F6 /* Pods-MTiOSDevKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTiOSDevKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-MTiOSDevKit_Example/Pods-MTiOSDevKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CF41390E28BDFEF0004B3C9F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		CF41391028BDFEF9004B3C9F /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		CF41391228BDFF00004B3C9F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		CFE7C34428B8B9D2005085DD /* MTiOSDevKit_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTiOSDevKit_Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		CFE7C34528B8B9D2005085DD /* Foo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
 		CFE7C34628B8B9D2005085DD /* Foo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF41391328BDFF00004B3C9F /* libz.tbd in Frameworks */,
+				CF41391128BDFEF9004B3C9F /* libbz2.tbd in Frameworks */,
+				CF41390F28BDFEF0004B3C9F /* libc++.tbd in Frameworks */,
 				0B79F33C1AB3EE25081BCD83 /* Pods_MTiOSDevKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +170,9 @@
 		6F481AAEA08A6E7F0BADFA3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CF41391228BDFF00004B3C9F /* libz.tbd */,
+				CF41391028BDFEF9004B3C9F /* libbz2.tbd */,
+				CF41390E28BDFEF0004B3C9F /* libc++.tbd */,
 				9080904B53E9A8E0F24A7D67 /* Pods_MTiOSDevKit_Example.framework */,
 				41A624E3AB988951858752FE /* Pods_MTiOSDevKit_Tests.framework */,
 			);
@@ -280,11 +292,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MTiOSDevKit_Example/Pods-MTiOSDevKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MTiOSDevKit/MTiOSDevKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTiOSDevKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
